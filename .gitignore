@@ -3,3 +3,10 @@
 .sass-cache
 _site
 Gemfile.lock
+_config.yml
+_posts/*
+assets/img/*.jpg
+assets/img/*.png
+assets/img/*.gif
+index.html
+.DS_Store

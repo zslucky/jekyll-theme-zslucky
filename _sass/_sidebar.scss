@@ -1,0 +1,40 @@
+.sidebar {
+
+  h3 {
+    text-align: center;
+  }
+
+  .panel-heading {
+    font-weight: bold;
+  }
+
+}
+
+.sidebar_avator-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidebar_avator {
+  border-radius: 50%;
+  height: 96px;
+  width: 96px;
+}
+
+.sidebar_social {
+  text-align: center;
+
+  i {
+    margin: auto 5px;
+  }
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.sidebar_contact-icons {
+  text-align: right;
+}

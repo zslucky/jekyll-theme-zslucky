@@ -1,0 +1,63 @@
+{% assign avator_url = site.avator_url %}
+
+<div class="sidebar">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="sidebar_avator-container">
+        <img class="sidebar_avator" src="{{ avator_url }}" />
+      </div>
+      <h3>{{ site.username }}</h3>
+      <div class="row">
+        <div class="col-md-2 sidebar_contact-icons">
+          <p><i class="fa fa-info-circle" aria-hidden="true"></i></p>
+          <p><i class="fa fa-qq" aria-hidden="true"></i></p>
+          <p><i class="fa fa-weixin" aria-hidden="true"></i></p>
+          <p><i class="fa fa-book" aria-hidden="true"></i></p>
+        </div>
+        <div class="col-md-10 sidebar_contact-infos">
+          <p>{{ site.jobtitle }}</p>
+          <p>{{ site.qq }}</p>
+          <p>{{ site.weixin }}</p>
+          <p>{{ site.user_desc }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer sidebar_social">
+      <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <a href="http://weibo.com/{{ site.weibo }}"><i class="fa fa-weibo fa-2x" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Categoeries
+    </div>
+    <!-- List group -->
+    <div class="list-group">
+      {% for category in site.categories %}
+        <a class="list-group-item" href="#">
+          {{ category | first }}
+          <span class="badge">{{ category | last | size }}</span>
+        </a>
+      {% endfor %}
+    </div>
+
+  </div>
+
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;&nbsp;Tags
+    </div>
+    <!-- List group -->
+    <div class="list-group">
+      {% for tag in site.tags %}
+        <a class="list-group-item" href="#">
+          {{ tag | first }}
+          <span class="badge">{{ tag | last | size }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
