@@ -28,7 +28,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+
+Only need to add follow settings in `_config` yaml file:
+
+```yaml
+# username is your name
+username: Lucky Zhou
+# your avator from assets
+avator_url: /assets/img/avator.jpg
+# your job title
+jobtitle: Front-end Engineer.
+# your qq number
+qq: 444950680
+# your weixin number
+weixin: Zsney88
+# your weibo number
+weibo: zsney88
+# yourselfs short description
+user_desc: Like open source projects, like sharing.
+```
 
 ## Contributing
 
@@ -46,3 +64,5 @@ When your theme is released, only the files in `_layouts`, `_includes`, and `_sa
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+## TODO
+1. To support custom syntax highlist config.
