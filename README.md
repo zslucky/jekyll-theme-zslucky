@@ -66,5 +66,11 @@ When your theme is released, only the files in `_layouts`, `_includes`, and `_sa
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+## Know issues
+
+Deploy to GitPage using auto build will cause build failed due to theme unsupported. I found 2 solutions here:
+1. Using `jekyll build` to build static files, then only publish all files in `_site` directory.
+2. Clone this theme repo, copy it to your jekyll site.
+
 ## TODO
 1. To support custom syntax highlist config.
