@@ -44,6 +44,8 @@ qq: 444950680
 weixin: Zsney88
 # your weibo number
 weibo: zsney88
+# your facebook id
+facebook: zsney.lzhou
 # yourselfs short description
 user_desc: Like open source projects, like sharing.
 ```

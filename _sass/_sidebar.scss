@@ -23,6 +23,17 @@
   width: 96px;
 }
 
+.sidebar_user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidebar_user-detail {
+  text-align: center
+}
+
 .sidebar_social {
   text-align: center;
 
@@ -36,5 +47,7 @@
 }
 
 .sidebar_contact-icons {
-  text-align: right;
+}
+
+.sidebar_contact-infos {
 }
