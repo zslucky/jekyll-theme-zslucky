@@ -58,7 +58,7 @@
     <!-- List group -->
     <div class="list-group">
       {% for category in site.categories %}
-        <a class="list-group-item" href="#">
+        <a class="list-group-item" href="/category/{{ category | first }}">
           {{ category | first }}
           <span class="badge">{{ category | last | size }}</span>
         </a>
@@ -75,7 +75,7 @@
     <!-- List group -->
     <div class="list-group">
       {% for tag in site.tags %}
-        <a class="list-group-item" href="#">
+        <a class="list-group-item" href="/tag/{{ tag | first }}">
           {{ tag | first }}
           <span class="badge">{{ tag | last | size }}</span>
         </a>
